@@ -23,7 +23,7 @@ public class HelloMysql {
     JdbcTemplate jdbcTemplate;
 
     @ResponseBody
-    @GetMapping("/query")
+    @GetMapping("/query")//浏览器短直接访问，默认用的是@GetMapping，用@PostMapping注解访问会失败
     public List<Map<String, Object>> query() {
         logger.info("query--start");
         //mysql和oracle不一样，mysql中没有dual表
