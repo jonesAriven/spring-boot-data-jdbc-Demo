@@ -7,7 +7,9 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     #自动执行的数据库脚本文件路径
 #    schema:
-#      - classpath:department.sql
+#      - classpath:sql/department.sql
+#      - classpath:sql/employee.sql
+
     #配置durid
     initialSize: 5
     minIdle: 5
@@ -25,3 +27,8 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     useGlobalDataSourceStat: true
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+mybatis:
+  # 指定全局配置文件位置
+  config-location: classpath:mybatis/mybatis-conf.xml
+  # 指定sql映射文件位置
+  mapper-locations: mybatis/mapper/*.xml
