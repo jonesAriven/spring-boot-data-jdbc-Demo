@@ -5,6 +5,7 @@
 <configuration>
 
     <settings>
+        <!--开启实体类对象属性与数据库字段的驼峰命名规则-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
 </configuration>
