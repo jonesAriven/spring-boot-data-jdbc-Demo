@@ -6,8 +6,8 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/test
     driver-class-name: com.mysql.jdbc.Driver
     #自动执行的数据库脚本文件路径
-    schema:
-      - classpath:department.sql
+#    schema:
+#      - classpath:department.sql
     #配置durid
     initialSize: 5
     minIdle: 5
