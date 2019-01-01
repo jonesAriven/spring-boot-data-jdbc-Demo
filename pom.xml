@@ -57,7 +57,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!--映入druic数据源，该数据源有数据库监控功能-->
+        <!--映入druid数据源，该数据源有数据库监控功能-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>

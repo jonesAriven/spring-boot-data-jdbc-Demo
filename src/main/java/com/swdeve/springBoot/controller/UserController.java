@@ -20,13 +20,13 @@ public class UserController {
     @Autowired
     UserRepository userRepository;
 
-    @GetMapping("/user/{id}")
+    @GetMapping("/user/{id}") //浏览器端访问地址：http://localhost:8080/user/2
     public User getUser(@PathVariable("id") Integer id){
         User user = userRepository.findOne(id);
         return user;
     }
 
-    @GetMapping("/user")
+    @GetMapping("/user")//浏览器端访问地址：http://localhost:8080/user?lastName=lishi&email=1750163946@qq.com&gender=1&dId=2
     public User insertUser(User user){
         User save = userRepository.save(user);
         return save;
